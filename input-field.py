@@ -10,6 +10,7 @@ def btn_handler():
     greet= "Hello "+ entry_1.get()
     label_1= Label(root, text=greet)
     label_1.pack()
+    entry_1.delete(0,END)
 
 button_1= Button(root, text="Enter", command=btn_handler)
 button_1.pack()
